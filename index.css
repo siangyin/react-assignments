@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sarabun";
+}
+
+body {
+	margin: 5%;
+	padding: 20px;
+	background-color: rgb(200, 234, 255);
+	text-decoration: none;
+	color: slategrey;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.react-app {
+	margin: 10px 0px 10px 0px;
+	padding: 15px;
+	border: white 2px solid;
+	background-color: rgb(233, 250, 255);
+	border-radius: 15px;
+	color: slategrey;
+}
+
+.react-app:hover {
+	border: white 2px solid;
+	background-color: rgb(193, 240, 255);
+	border-radius: 15px;
+	color: dodgerblue;
+}
