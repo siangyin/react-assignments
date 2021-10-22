@@ -22,3 +22,23 @@ body {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 	font-family: "Trebuchet MS";
 }
+
+.button {
+	font: inherit;
+	border: 1px solid black;
+	background: navy;
+	color: white;
+	padding: 0.25rem 1rem;
+	cursor: pointer;
+	margin: 10px 10px 10px 5px;
+}
+
+.button:hover,
+.button:active {
+	background: grey;
+	border-color: navy;
+}
+
+.button:focus {
+	outline: none;
+}

@@ -14,12 +14,15 @@ function App() {
 	function handleInput(obj) {
 		if (obj === "incomplete data") {
 			setEmptyAlert(true);
-			setTitle((prevState) => ({ ...prevState, ["h2"]: "Incomplete data" }));
+			setTitle({
+				h2: "Incomplete data input",
+				para: "Please enter a valid name and age (non-empty values).",
+			});
 		} else if (obj === "invalid age input") {
 			setEmptyAlert(true);
 			setTitle({
 				h2: "Invalid Age",
-				para: "Please enter a valid age.",
+				para: "Please enter a positive age value.",
 			});
 		} else {
 			setAllList((prevState) => [obj, ...prevState]);

@@ -17,12 +17,10 @@ function Form(props) {
 	function handleSubmit(e) {
 		e.preventDefault();
 
-		if (username.trim().length === 0 || age.trim().length) {
-			console.log("incomplete data");
-			props.userInput("incomplete data");
-		} else if (+age < 1) {
-			console.log("invalid age input");
+		if (+age < 1) {
 			props.userInput("invalid age input");
+		} else if (username.trim().length === 0 || age.trim().length) {
+			props.userInput("incomplete data");
 		} else {
 			const obj = {
 				name: username,

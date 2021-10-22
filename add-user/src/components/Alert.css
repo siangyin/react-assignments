@@ -7,38 +7,37 @@ body {
 	left: 0;
 }
 
-.alerth2 {
-	color: red;
-	margin: 5px;
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+.header {
+	background: navy;
+	padding: 1rem;
+}
+
+.header h2 {
+	margin: 0;
+	color: white;
 }
 
 .alert {
-	display: block;
-	margin-left: 25%;
-	width: 50%;
-	padding: 15px;
-	background-color: black;
-	border: black solid 2px;
-	color: white;
-	z-index: 9;
-	position: absolute;
+	position: fixed;
+	top: 30vh;
+	left: 10%;
+	width: 80%;
+	z-index: 100;
+	overflow: hidden;
+	border: white 2px solid;
+	background-color: ghostwhite;
 }
 
-.okbtn {
-	margin-left: 15px;
-	color: white;
-	font-weight: bold;
-	float: right;
-	font-size: 20px;
-	line-height: 20px;
-	padding: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-	background-color: navy;
-}
-
-.okbtn:hover {
-	background-color: lightskyblue;
-	color: black;
+.content {
+	padding: 1rem;
 }
