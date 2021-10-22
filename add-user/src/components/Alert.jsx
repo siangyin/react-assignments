@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function Alert(props) {
 	return (
-		<div className="backdrop">
+		<div className="backdrop" onClick={props.handleOkay}>
 			<div className="alert">
 				<header className="header">
 					<h2 className="alerth2">{props.title}</h2>

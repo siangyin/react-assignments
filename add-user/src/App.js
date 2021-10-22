@@ -5,22 +5,16 @@ import List from "./components/List";
 
 function App() {
 	const [allList, setAllList] = useState([{ name: "ken", age: 18 }]);
-	const [emptyAlert, setEmptyAlert] = useState(false);
-	const [title, setTitle] = useState({
-		h2: "Invalid Input",
-		para: "Please enter a valid name and age (non-empty values).",
-	});
+	const [error, setError] = useState(null);
 
 	function handleInput(obj) {
 		if (obj === "incomplete data") {
-			setEmptyAlert(true);
-			setTitle({
+			setError({
 				h2: "Incomplete data input",
 				para: "Please enter a valid name and age (non-empty values).",
 			});
 		} else if (obj === "invalid age input") {
-			setEmptyAlert(true);
-			setTitle({
+			setError({
 				h2: "Invalid Age",
 				para: "Please enter a positive age value.",
 			});
@@ -37,13 +31,15 @@ function App() {
 		);
 	});
 
-	function hideAlert() {
-		setEmptyAlert(false);
+	function hideAlert(e) {
+		e.stopPropagation();
+		setError(null);
+		console.log(e.target);
 	}
 	return (
 		<div>
-			{emptyAlert && (
-				<Alert title={title.h2} content={title.para} handleOkay={hideAlert} />
+			{error && (
+				<Alert title={error.h2} content={error.para} handleOkay={hideAlert} />
 			)}
 			<Form userInput={handleInput} />
 			<List>{allListing}</List>
