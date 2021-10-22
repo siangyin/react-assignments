@@ -1,0 +1,44 @@
+body {
+	background-color: rgba(46, 49, 49, 1);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.alerth2 {
+	color: red;
+	margin: 5px;
+	width: 100%;
+}
+
+.alert {
+	display: block;
+	margin-left: 25%;
+	width: 50%;
+	padding: 15px;
+	background-color: black;
+	border: black solid 2px;
+	color: white;
+	z-index: 9;
+	position: absolute;
+}
+
+.okbtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: navy;
+}
+
+.okbtn:hover {
+	background-color: lightskyblue;
+	color: black;
+}
