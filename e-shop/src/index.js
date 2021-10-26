@@ -16,16 +16,14 @@ function Product() {
 	return (
 		<article className="product">
 			<img
-				src="https://i1.adis.ws/i/canon/imageprograf-gp-2000-frt_related-product_65ef16d466354686aa334037d5482ab0"
-				alt="pro-2000"
+				src="https://cdn.shopify.com/s/files/1/0978/5112/products/PRO-2100_580x580_02_1_800x.png?v=1593188353"
+				alt="pro-2100"
 			></img>
-			<h1>PRO-2000</h1>
-			<p>
-				PR0-2000: powerful productivity and great prints. The LUCIA PRO
-				12-colour is positioned together and the ink system guarantees richer
-				colours and deeper blacks, while the 1.28" print head means faster
-				prints without compromising quality.
-			</p>
+			<h1>Pro-521</h1>
+			<h4>
+				12-colour 24" Professional Photographic Large-Format Inkjet Printer with
+				Multifunction Roll System
+			</h4>
 		</article>
 	);
 }
