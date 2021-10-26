@@ -5,7 +5,8 @@ import "./index.css";
 
 function ProductList() {
 	return (
-		<section>
+		<section className="productlist">
+			<Product />
 			<Product />
 		</section>
 	);
@@ -13,12 +14,12 @@ function ProductList() {
 
 function Product() {
 	return (
-		<article>
+		<article className="product">
 			<img
 				src="https://i1.adis.ws/i/canon/imageprograf-gp-2000-frt_related-product_65ef16d466354686aa334037d5482ab0"
 				alt="pro-2000"
 			></img>
-			<h3>PRO-2000</h3>
+			<h1>PRO-2000</h1>
 			<p>
 				PR0-2000: powerful productivity and great prints. The LUCIA PRO
 				12-colour is positioned together and the ink system guarantees richer
