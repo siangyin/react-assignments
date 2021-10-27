@@ -9,7 +9,6 @@ function ProductList() {
 			{itemArr.map((item) => {
 				return <Product key={item.code} {...item} />;
 			})}
-			<Product />
 		</section>
 	);
 }
@@ -30,8 +29,11 @@ function Product(props) {
 			</h4>
 
 			<h4>
-				Price: US$
-				{props.price}
+				Price: USD
+				{new Intl.NumberFormat("en-US", {
+					style: "currency",
+					currency: "USD",
+				}).format(props.price)}
 			</h4>
 			<button
 				onClick={() => {
