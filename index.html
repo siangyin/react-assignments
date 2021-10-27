@@ -18,7 +18,21 @@
 			<a href="https://siangyin.github.io/react-assignments/e-shop/build/"><h3>e-shop</h3>
 			<p>Learning point: </p>
 			<ul>
-				<li>mapping of product for each instances</li>
+
+				<li>mapping of product for each instances with spread operator. <br>
+					e.g. <p class="code"> < Product key={item.code} {...item}  />;</p>
+				</li>
+				<li>basic event handler (normal function pointing vs inline anonymous functions). <br>
+				<p class="code">
+					onClick={clickHandler}
+				</p>
+
+					<p class="code">
+					onMouseOver={() => {
+				console.log(props.model);
+			}}
+				</p>
+				</li>
 			</ul></a>
 		</div>
 

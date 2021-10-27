@@ -41,3 +41,8 @@ a:active {
 	border-radius: 15px;
 	color: dodgerblue;
 }
+
+.code {
+	font-family: "Trebuchet MS", sans-serif;
+	color: violet;
+}
