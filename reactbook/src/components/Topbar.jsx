@@ -4,8 +4,9 @@ import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 const Topbar = () => {
 	return (
 		<div className="topbarContainer">
-			<div className="topbarLeft">
-				<span className="logo">ReactBook</span>
+			<div className="topbarLeft logo">
+				<span className="react">React</span>
+				<span className="book">book</span>
 			</div>
 
 			<div className="topbarCenter">
@@ -37,7 +38,7 @@ const Topbar = () => {
 				</div>
 
 				<img
-					src="../../public/assets/potrait01.jpeg"
+					src="/assets/images/potrait01.jpeg"
 					alt="img"
 					className="topbarImg"
 				/>
